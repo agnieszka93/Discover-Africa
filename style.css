@@ -1,0 +1,182 @@
+
+/*zdjęcia pochodzą ze strony: pixabay.com*/
+
+@keyframes przesun {
+    0% {
+        transform: translate(-200px);
+        opacity:0.1;
+    }
+
+    100% {
+        transform:translate(0px);
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    margin-top:0;
+    background-color: rgb(61, 80, 88);
+    box-shadow: 0px 1px 4px rgb(56, 56, 59);
+}
+
+ol {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: inline-block;
+    height: 40px;
+}
+
+ol a {
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    margin-right: 40px;
+    color: #ffffff;
+}
+
+ol a:hover {
+    color: #bdb9b9;
+}
+
+
+ol > li {
+    float: left;
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+.photo1 {
+    background-image: url(photo1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 1000px;
+    width: 100%;
+    background-attachment:fixed; /*odpowiada za efekt paralaxy na stronie*/
+}
+
+.photo1 h1 {
+    font-family: 'Manjari', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ffffff;
+    display:block;
+    margin-left: 35%;
+    margin-right:35%;
+    margin-top: 8%;
+    animation-name: przesun;
+    animation-duration: 2s;
+    text-shadow: 3px 3px 7px #3A3651;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: justify;
+    margin-top: 2px;
+    background-color: #ffffff;
+}
+
+.text p {
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.photo2 {
+    background-image: url(photo2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 1000px;
+    width: 100%;
+    background-attachment:fixed;
+}
+
+.photo3 {
+    background-image: url(photo3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    height: 500px;
+    width: 100%;
+    background-attachment:fixed;
+    opacity:0.9; /*lekko przezroczytste tło*/
+    background-color: rgb(124, 35, 13);
+    background-blend-mode: multiply; /*miesza kolor tła ze zdjęciem*/
+}
+
+.postcard {
+    display: inline-block;
+    width: 320px;
+    height: 200px;
+    padding-right: 10px;
+    margin-top: 30px;
+    overflow:hidden;
+}
+
+.p1 {
+    width: 320px;
+    height: 200px;
+    transition: all 2s all-in-out;
+}
+
+.scale {
+    overflow: hidden;
+}
+
+.scale img {
+    transition: all 0.5s ease-in-out;
+}
+
+.p1:hover {
+    transform:scale(1.15);
+}
+
+footer {
+    clear: both;
+    height: 100px;
+    background-color: rgb(53, 42, 40);
+    text-align: center;
+    padding-top: 40px;
+    color: #9e9393;
+    padding-top: 20px;
+    block-size: 100%;
+}
+
+footer ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+footer ul li {
+    display: block;
+    float: left;
+    padding-right: 20px;
+}
+
+footer ul li:hover {
+    color: #6b6262;
+    cursor: pointer;
+}
